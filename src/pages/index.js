@@ -9,8 +9,16 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <p>Welcome to my website.</p>
+    <p>Have a look around!</p>
+    <ul>
+      <li>
+        <a href="https://github.com/jgarplind">GitHub</a>
+      </li>
+      <li>
+        <a href="https://dev.to/jgarplind">DEV.To</a>
+      </li>
+    </ul>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
