@@ -7,7 +7,12 @@ import SEO from "../components/seo"
 const CV = () => (
   <Layout>
     <SEO title="CV" />
-    <h1>CV 📝</h1>
+    <h1>
+      CV{" "}
+      <span role="img" aria-label="notepad">
+        📝
+      </span>
+    </h1>
     <p>Find me on:</p>
     <ul>
       <li>
@@ -26,7 +31,12 @@ const CV = () => (
       collaborating. I enjoy working as a front end developer but it is really
       just one of many domains in which I enjoy to solve problems.
     </p>
-    <h2>Work Experience 👨🏼‍💻</h2>
+    <h2>
+      Work Experience{" "}
+      <span role="img" aria-label="hacker">
+        👨🏼‍💻
+      </span>
+    </h2>
     <h3>Front end developer, Forefront</h3>
     <p>May 2019 - present</p>
     <p>
@@ -44,7 +54,12 @@ const CV = () => (
       Played a crucial role in bridging the gap between product owners and
       offshore developers.
     </p>
-    <h2>Education 👨🏼‍🎓</h2>
+    <h2>
+      Education{" "}
+      <span role="img" aria-label="student">
+        👨🏼‍🎓
+      </span>
+    </h2>
     <h3>
       MSc. Industrial Engineering and Management, Linköping University, Sweden
     </h3>
@@ -75,7 +90,12 @@ const CV = () => (
       <li>Candidate project - eCommerce website</li>
       <li>Computer architecture</li>
     </ul>
-    <h2>Side activities ⚽️</h2>
+    <h2>
+      Side activities{" "}
+      <span role="img" aria-label="football">
+        ⚽️
+      </span>
+    </h2>
     <h3>Board member of tenant owners' association</h3>
     <p>October 2019 - present</p>
     <p>
@@ -98,7 +118,12 @@ const CV = () => (
       bringing 10+ nationalities together and travelling across the (small)
       country to play tournaments.
     </p>
-    <h2>Certificates and awards 🏆</h2>
+    <h2>
+      Certificates and awards{" "}
+      <span role="img" aria-label="trophy">
+        🏆
+      </span>
+    </h2>
     <p>
       I don't value certificates highly, since I believe they only show a
       miniscule subset of the skills I and others possess. But others think
@@ -132,12 +157,22 @@ const CV = () => (
     <p>
       SEK 8 500 for exchange studies. Selection based on good study results.
     </p>
-    <h2>Languages 🗣</h2>
+    <h2>
+      Languages{" "}
+      <span role="img" aria-label="shouting person">
+        🗣
+      </span>
+    </h2>
     <p>Swedish – the language I dream in.</p>
     <p>English – the language I work in.</p>
     <p>Spanish – the language I learned in a school bench and never applied.</p>
     <p>Korean – the language I briefly learned and try to not forget.</p>
-    <h2>Personal 🤓</h2>
+    <h2>
+      Personal{" "}
+      <span role="img" aria-label="nerdface">
+        🤓
+      </span>
+    </h2>
     <p>
       Too many things to write in too little space. Right now I am enjoying
       Civilization VI (computer game). Good balance of strategy, historical
