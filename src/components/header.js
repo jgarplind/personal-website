@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle, menuLinks }) => (
-  <nav className="bg-secondary mb-6 pt-6 pb-3 px-4 mx-0 mt-auto flex justify-between items-center">
+  <nav className="sticky top-0 bg-secondary mb-6 pt-6 pb-3 px-4 mx-0 mt-auto flex justify-between items-center">
     <Link className="text-headline" to="/">
       <span className="text-xl">{siteTitle}</span>
     </Link>
