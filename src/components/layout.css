@@ -9,8 +9,24 @@ html {
 body {
   @apply font-sans;
   margin: 0;
+  background-color: theme("colors.background");
+  color: theme("colors.text");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+header a:hover,
+nav a:hover {
+  text-decoration: overline;
+}
+main a {
+  color: theme("colors.highlight");
+}
+main a:hover {
+  text-decoration: underline;
+}
+footer a:hover {
+  color: theme("colors.highlight");
+  text-decoration: underline;
 }
 article,
 aside,
@@ -42,14 +58,6 @@ progress {
 [hidden],
 template {
   display: none;
-}
-/* a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-} */
-a:active,
-a:hover {
-  outline-width: 0;
 }
 abbr[title] {
   border-bottom: none;
@@ -231,7 +239,7 @@ h1 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: theme("colors.headline");
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
@@ -375,6 +383,7 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  color: theme("colors.text");
 }
 figure {
   margin-left: 0;

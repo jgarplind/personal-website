@@ -1,24 +1,12 @@
 import React from "react"
 
 const Footer = () => (
-  <footer class="bg-green-900 text-white p-6 flex justify-between">
-    <div>
-      © {new Date().getFullYear()}, Built with
-      {` `}
+  <footer className="bg-background text-text p-6 flex justify-end mt-16 pt-16">
+    <div className="flex text-text w-24 justify-between">
       <a
         target="_blank"
         rel="noopener noreferrer"
-        class="text-white hover:underline"
-        href="https://www.gatsbyjs.org"
-      >
-        Gatsby
-      </a>
-    </div>
-    <div class="flex text-gray-400 w-24 justify-between">
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-white"
+        className="hover:text-highlight"
         href="https://twitter.com/jgarplind"
         aria-label="Visit my Twitter"
       >
@@ -38,7 +26,7 @@ const Footer = () => (
       <a
         target="_blank"
         rel="noopener noreferrer"
-        class="hover:text-white"
+        className="hover:text-highlight"
         href="https://github.com/jgarplind"
         aria-label="Visit my Github"
       >
@@ -58,7 +46,7 @@ const Footer = () => (
       <a
         target="_blank"
         rel="noopener noreferrer"
-        class="hover:text-white"
+        className="hover:text-highlight"
         href="https://linkedin.com/joel-garplind"
         aria-label="Visit my LinkedIn"
       >

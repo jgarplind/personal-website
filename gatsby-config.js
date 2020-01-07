@@ -11,23 +11,30 @@ module.exports = {
         link: "/blog",
       },
       {
-        name: "CV",
-        link: "/cv",
+        name: "About",
+        link: "/about",
       },
     ],
-    description: `Personal website for Joel Garplind`,
+    description: `Joel Garplind's personal website`,
     author: `@joel.garplind`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `src`,
+        path: `${__dirname}/src`,
       },
     },
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        excerpt_separator: `<!-- endexcerpt -->`,
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

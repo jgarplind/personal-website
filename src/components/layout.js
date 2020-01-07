@@ -14,7 +14,7 @@ import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
+  const { site } = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
@@ -29,16 +29,16 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="min-h-screen flex-col">
       <Header
-        menuLinks={data.site.siteMetadata.menuLinks}
-        siteTitle={data.site.siteMetadata.title}
+        menuLinks={site.siteMetadata.menuLinks}
+        siteTitle={site.siteMetadata.title}
       />
-      <div class="mx-auto my-0 max-w-xl pt-0 px-4 pb-6">
+      <div className="mx-auto my-0 max-w-xl pt-0 px-4 pb-6">
         <main>{children}</main>
       </div>
       <Footer />
-    </>
+    </div>
   )
 }
 

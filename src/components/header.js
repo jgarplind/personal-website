@@ -3,24 +3,20 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle, menuLinks }) => (
-  <header class="bg-green-900 mb-6 pt-6 pb-3 px-4 mx-0 mt-auto flex flex-col items-center">
-    <h1 class="m-0 text-white hover:underline">
-      <Link to="/">{siteTitle}</Link>
-    </h1>
-    <div>
-      <nav>
-        <ul class="flex m-0">
-          {menuLinks.map(link => (
-            <li class="text-white hover:underline p-4 m-0" key={link.name}>
-              <Link class="text-white" to={link.link}>
-                {link.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <nav className="bg-secondary mb-6 pt-6 pb-3 px-4 mx-0 mt-auto flex justify-between items-center">
+    <Link className="text-headline" to="/">
+      <span className="text-xl">{siteTitle}</span>
+    </Link>
+    <ul className="flex m-0 justify-center">
+      {menuLinks.map(({ link, name }) => (
+        <li className="p-4 m-0" key={name}>
+          <Link className="text-headline" to={link}>
+            {name}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  </nav>
 )
 
 Header.propTypes = {
