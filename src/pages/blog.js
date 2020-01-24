@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import BlogPostSummary from "../components/BlogPostSummary"
+import BlogPostSummary from "../components/blogPostSummary"
 
 export default ({ data }) => {
   return (
