@@ -1,0 +1,286 @@
+/* Variables */
+
+:root {
+  --background-color: hsl(20, 35%, 95%);
+  --primary-color: hsl(15, 61%, 51%);
+  --text-color: hsl(0, 0%, 16%);
+  --inactive-color: hsl(0, 0%, 70%);
+  --vertical-space: 1.5rem;
+}
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01s !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Defaults */
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Garamond, serif;
+  line-height: 1.2;
+}
+
+html {
+  font-size: 1.125rem;
+  font-family: Georgia, sans-serif;
+}
+
+em {
+  color: var(--primary-color);
+}
+
+::selection {
+  color: var(--background-color);
+  background-color: var(--text-color);
+}
+
+a {
+  color: currentColor;
+  text-decoration-color: var(--primary-color);
+  text-underline-offset: 1px;
+}
+
+a:hover,
+a:focus {
+  color: var(--primary-color);
+  text-decoration-color: var(--text-color);
+  text-underline-offset: 2px;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: 2px solid var(--primary-color);
+  background: var(--text-color);
+  color: var(--background-color);
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+/* Utilities */
+
+.wrapper {
+  max-width: 40rem;
+  padding: 0 16px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+/* Skip link */
+.skip-link:not(:focus) {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+/* Site head */
+
+.site-head__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-head__inner > a {
+  display: block;
+  line-height: 0;
+  padding: 16px 0;
+}
+
+.site-head__inner nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-head__inner nav ul {
+  display: flex;
+  gap: 8px;
+}
+
+.site-head__inner nav li {
+  padding: 8px;
+}
+
+.site-head__inner nav a {
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+}
+
+.site-head__inner nav a:not(:hover) {
+  text-decoration: none;
+}
+
+/* Flow content */
+.flow > * + * {
+  margin-top: var(--vertical-space);
+}
+
+.flow h1,
+.flow h2,
+.flow h3 {
+  --vertical-space: 3rem;
+}
+
+/* Home */
+.home {
+  text-align: center;
+}
+
+/* Post */
+
+.post ol,
+.post ul {
+  list-style: cjk-ideographic;
+  padding: revert;
+}
+
+.post blockquote {
+  padding-inline-start: 37px;
+  border-left: 3px solid var(--primary-color);
+  font-style: italic;
+}
+
+/* Post list */
+
+.post-list > li {
+  margin-top: 16px;
+}
+
+.post-list .time-written {
+  padding-inline-start: 16px;
+}
+
+.post-list footer nav [data-direction="forwards"] {
+  margin-inline-start: auto;
+}
+
+/* Site foot */
+
+.site-foot {
+  padding: 40px 0;
+}
+
+.site-foot .social {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.site-foot .social a {
+  display: block;
+  text-decoration: none;
+  color: var(--inactive-color);
+  height: 100%;
+}
+
+.site-foot .social a:hover,
+.site-foot .social a:focus {
+  color: var(--primary-color);
+  outline: none;
+}
+
+.site-foot nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

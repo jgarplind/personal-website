@@ -1,0 +1,13 @@
+<ol class="post-list">
+  {% for item in postListItems %}
+  <li>
+    <a href="{{ item.url }}"><h2>{{ item.data.title }}</h2> </a>
+    <span class="time-written"
+      >written
+      <time datetime="{{ item.data.date | w3DateFilter }}"
+        >{{ item.data.date | distanceDateFilter }}</time
+      ></span
+    >
+  </li>
+  {% endfor %}
+</ol>
