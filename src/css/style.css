@@ -226,6 +226,15 @@ a:focus {
   text-align: center;
 }
 
+.home em {
+  display: inline-block;
+  transition: transform 500ms;
+}
+
+.home em:hover {
+  transform: rotate(10deg);
+}
+
 /* Post */
 
 .post ol,
